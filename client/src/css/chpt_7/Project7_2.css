@@ -1,0 +1,115 @@
+.project-7_2-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-7_2"
+  "description-7_2"
+  "project-7_2-requirements"
+  "project-7_2-quicksort"
+  "project-7_2-quicksort-exp"
+  "project-7_2-partition"
+  "project-7_2-partition-exp"
+  "project-7_2-median"
+  "project-7_2-median-exp"
+  "project-7_2-swap"
+  "project-7_2-swap-exp"
+  "project-7_2-display"
+  "project-7_2-display-exp"
+  "hr-7_2";
+  grid-gap: 30px;
+}
+
+.project-7_2-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-7_2-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.project-7_2-grid a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.project-7_2-grid a:hover,
+.project-7_2-grid a:active {
+  text-decoration: underline;
+}
+
+.title-7_2 {
+  grid-area: title-7_2;
+  text-align: center;
+}
+
+.description-7_2 {
+  grid-area: description-7_2;
+  text-align: center;
+}
+
+.project-7_2-requirements {
+  grid-area: project-7_2-requirements;
+  text-align: center;
+}
+
+.project-7_2-quicksort {
+  grid-area: project-7_2-quicksort;
+}
+.project-7_2-quicksort-exp {
+  grid-area: project-7_2-quicksort-exp;
+}
+
+.project-7_2-partition {
+  grid-area: project-7_2-partition;
+}
+.project-7_2-partition-exp {
+  grid-area: project-7_2-partition-exp;
+}
+
+.project-7_2-median {
+  grid-area: project-7_2-median;
+}
+.project-7_2-median-exp {
+  grid-area: project-7_2-median-exp;
+}
+
+.project-7_2-swap {
+  grid-area: project-7_2-swap;
+}
+.project-7_2-swap-exp {
+  grid-area: project-7_2-swap-exp;
+}
+
+.project-7_2-display {
+  grid-area: project-7_2-display;
+}
+.project-7_2-display-exp {
+  grid-area: project-7_2-display-exp;
+}
+
+.hr-7_2 {
+  grid-area: hr-7_2;
+}
+
+@media screen and (min-width: 736px) {
+  .project-7_2-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-7_2 title-7_2"
+    "description-7_2 description-7_2"
+    "project-7_2-requirements project-7_2-requirements"
+    "project-7_2-quicksort project-7_2-quicksort-exp"
+    "project-7_2-partition project-7_2-partition-exp"
+    "project-7_2-median project-7_2-median-exp"
+    "project-7_2-swap project-7_2-swap-exp"
+    "project-7_2-display project-7_2-display-exp"
+    "hr-7_2 hr-7_2";
+    grid-gap: 50px;
+  }
+}

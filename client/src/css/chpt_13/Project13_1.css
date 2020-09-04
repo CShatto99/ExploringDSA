@@ -1,0 +1,93 @@
+.project-13_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-13_1"
+  "description-13_1"
+  "image-13_1"
+  "project-13_1-requirements"
+  "project-13_1-minimum-spanning-tree"
+  "project-13_1-minimum-spanning-tree-exp"
+  "project-13_1-get-unvisited-vert"
+  "project-13_1-get-unvisited-vert-exp"
+  "hr-13_1";
+}
+
+.project-13_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-13_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-13_1 {
+  grid-area: title-13_1;
+  text-align: center;
+}
+
+.description-13_1 {
+  grid-area: description-13_1;
+  text-align: center;
+}
+
+.description-13_1 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-13_1 a:hover,
+.description-13_1 a:active {
+  text-decoration: underline;
+}
+
+.image-13_1 {
+  grid-area: image-13_1;
+  display: inline-grid;
+}
+
+.project-13_1-requirements {
+  grid-area: project-13_1-requirements;
+  text-align: center;
+}
+
+.project-13_1-minimum-spanning-tree {
+  grid-area: project-13_1-minimum-spanning-tree;
+}
+.project-13_1-minimum-spanning-tree-exp {
+  grid-area: project-13_1-minimum-spanning-tree-exp;
+  margin: auto;
+}
+
+.project-13_1-get-unvisited-vert {
+  grid-area: project-13_1-get-unvisited-vert;
+}
+.project-13_1-get-unvisited-vert-exp {
+  grid-area: project-13_1-get-unvisited-vert-exp;
+  margin: auto;
+}
+
+.hr-13_1 {
+  grid-area: hr-13_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-13_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-13_1 title-13_1"
+    "description-13_1 image-13_1"
+    "project-13_1-requirements project-13_1-requirements"
+    "project-13_1-minimum-spanning-tree project-13_1-minimum-spanning-tree-exp"
+    "project-13_1-get-unvisited-vert project-13_1-get-unvisited-vert-exp"
+    "hr-13_1 hr-13_1";
+  }
+}

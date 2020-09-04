@@ -1,0 +1,110 @@
+.project-4_2-grid {
+  color: #1C1C1C;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-4_2"
+  "description-4_2"
+  "image-4_2"
+  "project-4_2-requirements"
+  "project-4_2-insert_rear"
+  "project-4_2-insert_rear-exp"
+  "project-4_2-insert_front"
+  "project-4_2-insert_front-exp"
+  "project-4_2-remove_rear"
+  "project-4_2-remove_rear-exp"
+  "project-4_2-remove_front"
+  "project-4_2-remove_front-exp"
+  "hr-4_2";
+}
+
+.project-4_2-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-4_2-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-4_2 {
+  grid-area: title-4_2;
+  text-align: center;
+}
+
+.description-4_2 {
+  grid-area: description-4_2;
+  text-align: center;
+}
+
+.image-4_2 {
+  grid-area: image-4_2;
+  display: inline-grid;
+}
+
+.image-4_2 img {
+  margin: auto;
+}
+
+.project-4_2-requirements {
+  grid-area: project-4_2-requirements;
+  text-align: center;
+}
+
+.project-4_2-insert_rear {
+  grid-area: project-4_2-insert_rear;
+}
+.project-4_2-insert_rear-exp {
+  grid-area: project-4_2-insert_rear-exp;
+  margin: auto;
+}
+
+.project-4_2-insert_front {
+  grid-area: project-4_2-insert_front;
+}
+.project-4_2-insert_front-exp {
+  grid-area: project-4_2-insert_front-exp;
+  margin: auto;
+}
+
+.project-4_2-remove_rear {
+  grid-area: project-4_2-remove_rear;
+}
+.project-4_2-remove_rear-exp {
+  grid-area: project-4_2-remove_rear-exp;
+  margin: auto;
+}
+
+.project-4_2-remove_front {
+  grid-area: project-4_2-remove_front;
+}
+.project-4_2-remove_front-exp {
+  grid-area: project-4_2-remove_front-exp;
+  margin: auto;
+}
+
+.hr-4_2 {
+  grid-area: hr-4_2;
+}
+
+@media screen and (min-width: 736px) {
+  .project-4_2-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-4_2 title-4_2"
+    "description-4_2 image-4_2"
+    "project-4_2-requirements project-4_2-requirements"
+    "project-4_2-insert_rear project-4_2-insert_rear-exp"
+    "project-4_2-insert_front project-4_2-insert_front-exp"
+    "project-4_2-remove_rear project-4_2-remove_rear-exp"
+    "project-4_2-remove_front project-4_2-remove_front-exp"
+    "hr-4_2 hr-4_2";
+    grid-gap: 50px;
+  }
+}

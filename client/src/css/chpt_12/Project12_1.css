@@ -1,0 +1,115 @@
+.project-12_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-12_1"
+  "description-12_1"
+  "image-12_1"
+  "project-12_1-requirements"
+  "project-12_1-insert"
+  "project-12_1-insert-exp"
+  "project-12_1-trickle-up"
+  "project-12_1-trickle-up-exp"
+  "project-12_1-remove"
+  "project-12_1-remove-exp"
+  "project-12_1-trickle-down"
+  "project-12_1-trickle-down-exp"
+  "hr-12_1";
+}
+
+.project-12_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-12_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-12_1 {
+  grid-area: title-12_1;
+  text-align: center;
+}
+
+.description-12_1 {
+  grid-area: description-12_1;
+  text-align: center;
+}
+
+.description-12_1 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-12_1 a:hover,
+.description-12_1 a:active {
+  text-decoration: underline;
+}
+
+.image-12_1 {
+  grid-area: image-12_1;
+  display: inline-grid;
+}
+
+.project-12_1-requirements {
+  grid-area: project-12_1-requirements;
+  text-align: center;
+}
+
+.project-12_1-insert {
+  grid-area: project-12_1-insert;
+}
+.project-12_1-insert-exp {
+  grid-area: project-12_1-insert-exp;
+  margin: auto;
+}
+
+.project-12_1-trickle-up {
+  grid-area: project-12_1-trickle-up;
+}
+.project-12_1-trickle-up-exp {
+  grid-area: project-12_1-trickle-up-exp;
+  margin: auto;
+}
+
+.project-12_1-remove {
+  grid-area: project-12_1-remove;
+}
+.project-12_1-remove-exp {
+  grid-area: project-12_1-remove-exp;
+  margin: auto;
+}
+
+.project-12_1-trickle-down {
+  grid-area: project-12_1-trickle-down;
+}
+.project-12_1-trickle-down-exp {
+  grid-area: project-12_1-trickle-down-exp;
+  margin: auto;
+}
+
+.hr-12_1 {
+  grid-area: hr-12_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-12_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-12_1 title-12_1"
+    "description-12_1 image-12_1"
+    "project-12_1-requirements project-12_1-requirements"
+    "project-12_1-insert project-12_1-insert-exp"
+    "project-12_1-trickle-up project-12_1-trickle-up-exp"
+    "project-12_1-remove project-12_1-remove-exp"
+    "project-12_1-trickle-down project-12_1-trickle-down-exp"
+    "hr-12_1 hr-12_1";
+  }
+}

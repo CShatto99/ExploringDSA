@@ -1,0 +1,82 @@
+.project-10_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-10_1"
+  "description-10_1"
+  "image-10_1"
+  "project-10_1-requirements"
+  "project-10_1-minimum"
+  "project-10_1-minimum-exp"
+  "hr-10_1";
+}
+
+.project-10_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-10_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-10_1 {
+  grid-area: title-10_1;
+  text-align: center;
+}
+
+.description-10_1 {
+  grid-area: description-10_1;
+  text-align: center;
+}
+
+.description-10_1 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-10_1 a:hover,
+.description-10_1 a:active {
+  text-decoration: underline;
+}
+
+.image-10_1 {
+  grid-area: image-10_1;
+  display: inline-grid;
+}
+
+.project-10_1-requirements {
+  grid-area: project-10_1-requirements;
+  text-align: center;
+}
+
+.project-10_1-minimum {
+  grid-area: project-10_1-minimum;
+}
+.project-10_1-minimum-exp {
+  grid-area: project-10_1-minimum-exp;
+  margin: auto;
+}
+
+.hr-10_1 {
+  grid-area: hr-10_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-10_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-10_1 title-10_1"
+    "description-10_1 image-10_1"
+    "project-10_1-requirements project-10_1-requirements"
+    "project-10_1-minimum project-10_1-minimum-exp"
+    "hr-10_1 hr-10_1";
+  }
+}

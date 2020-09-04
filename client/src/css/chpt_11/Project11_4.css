@@ -1,0 +1,104 @@
+.project-11_4-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-11_4"
+  "description-11_4"
+  "image-11_4"
+  "project-11_4-requirements"
+  "project-11_4-insert"
+  "project-11_4-insert-exp"
+  "project-11_4-re-hash"
+  "project-11_4-re-hash-exp"
+  "project-11_4-is-prime"
+  "project-11_4-is-prime-exp"
+  "hr-11_4";
+  grid-gap: 30px;
+}
+
+.project-11_4-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-11_4-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-11_4 {
+  grid-area: title-11_4;
+  text-align: center;
+}
+
+.description-11_4 {
+  grid-area: description-11_4;
+  text-align: center;
+}
+
+.description-11_4 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-11_4 a:hover,
+.description-11_4 a:active {
+  text-decoration: underline;
+}
+
+.image-11_4 {
+  grid-area: image-11_4;
+  display: inline-grid;
+}
+
+.project-11_4-requirements {
+  grid-area: project-11_4-requirements;
+  text-align: center;
+}
+
+.project-11_4-insert {
+  grid-area: project-11_4-insert;
+}
+.project-11_4-insert-exp {
+  grid-area: project-11_4-insert-exp;
+  margin: auto;
+}
+
+.project-11_4-re-hash {
+  grid-area: project-11_4-re-hash;
+}
+.project-11_4-re-hash-exp {
+  grid-area: project-11_4-re-hash-exp;
+  margin: auto;
+}
+
+.project-11_4-is-prime {
+  grid-area: project-11_4-is-prime;
+}
+.project-11_4-is-prime-exp {
+  grid-area: project-11_4-is-prime-exp;
+  margin: auto;
+}
+
+.hr-11_4 {
+  grid-area: hr-11_4;
+}
+
+@media screen and (min-width: 736px) {
+  .project-11_4-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-11_4 title-11_4"
+    "description-11_4 image-11_4"
+    "project-11_4-requirements project-11_4-requirements"
+    "project-11_4-insert project-11_4-insert-exp"
+    "project-11_4-re-hash project-11_4-re-hash-exp"
+    "project-11_4-is-prime project-11_4-is-prime-exp"
+    "hr-11_4 hr-11_4";
+    grid-gap: 50px;
+  }
+}

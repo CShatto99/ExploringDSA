@@ -1,0 +1,53 @@
+.trees_234-grid {
+  margin: 94px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title"
+  "project-10_1-grid"
+  "project-10_2-grid"
+  "project-10_3-grid"
+  "project-10_4-grid"
+  "project-10_5-grid";
+  grid-gap: 30px;
+}
+
+.trees_234-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.project-10_1-grid {
+  grid-area: project-10_1-grid;
+}
+
+.project-10_2-grid {
+  grid-area: project-10_2-grid;
+}
+
+.project-10_3-grid {
+  grid-area: project-10_3-grid;
+}
+
+.project-10_4-grid {
+  grid-area: project-10_4-grid;
+}
+
+.project-10_5-grid {
+  grid-area: project-10_5-grid;
+}
+
+@media screen and (min-width: 736px) {
+  .trees_234-grid {
+    margin: 94px 0 30px 0;
+    grid-template-columns:  1fr 900px 1fr;
+    grid-template-areas:
+    ". title ."
+    ". project-10_1-grid ."
+    ". project-10_2-grid ."
+    ". project-10_3-grid ."
+    ". project-10_4-grid ."
+    ". project-10_5-grid .";
+    grid-gap: 50px;
+  }
+}

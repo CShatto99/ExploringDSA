@@ -1,0 +1,51 @@
+.recursion-grid {
+  font-size: 16px;
+  margin: 94px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title"
+  "project-6_1-grid"
+  "project-6_3-grid"
+  "project-6_4-grid";
+  grid-gap: 30px;
+}
+
+.recursion-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.project-6_1-grid {
+  grid-area: project-6_1-grid;
+}
+
+.project-6_2-grid {
+  grid-area: project-6_2-grid;
+}
+
+.project-6_3-grid {
+  grid-area: project-6_3-grid;
+}
+
+.project-6_4-grid {
+  grid-area: project-6_4-grid;
+}
+
+.project-6_5-grid {
+  grid-area: project-6_5-grid;
+}
+
+@media screen and (min-width: 736px) {
+  .recursion-grid {
+    margin: 94px 0 30px 0;
+    font-size: 18px;
+    grid-template-columns:  1fr 900px 1fr;
+    grid-template-areas:
+    ". title ."
+    ". project-6_1-grid ."
+    ". project-6_3-grid ."
+    ". project-6_4-grid .";
+    grid-gap: 50px;
+  }
+}

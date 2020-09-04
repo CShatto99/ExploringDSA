@@ -1,0 +1,57 @@
+.advanced_sorting-grid {
+  margin: 94px 15px 30px 15px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title"
+  "project-7_1-grid"
+  "project-7_2-grid"
+  "project-7_3-grid"
+  "project-7_4-grid"
+  "project-7_5-grid";
+}
+
+.advanced_sorting-grid div {
+  margin: auto 0;
+}
+
+.advanced_sorting-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.project-7_1-grid {
+  grid-area: project-7_1-grid;
+}
+
+.project-7_2-grid {
+  grid-area: project-7_2-grid;
+}
+
+.project-7_3-grid {
+  grid-area: project-7_3-grid;
+}
+
+.project-7_4-grid {
+  grid-area: project-7_4-grid;
+}
+
+.project-7_5-grid {
+  grid-area: project-7_5-grid;
+}
+
+@media screen and (min-width: 736px) {
+  .advanced_sorting-grid {
+    margin: 94px 0 30px 0;
+    grid-gap: 50px;
+    grid-template-columns:  1fr 900px 1fr;
+    grid-template-areas:
+    ". title ."
+    ". project-7_1-grid ."
+    ". project-7_2-grid ."
+    ". project-7_3-grid ."
+    ". project-7_4-grid ."
+    ". project-7_5-grid .";
+  }
+}

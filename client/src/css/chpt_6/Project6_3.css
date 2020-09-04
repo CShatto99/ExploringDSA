@@ -1,0 +1,96 @@
+.project-6_3-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-6_3"
+  "description-6_3"
+  "image-6_3"
+  "project-6_3-requirements"
+  "project-6_3-power"
+  "project-6_3-power-exp"
+  "project-6_3-main"
+  "project-6_3-main-exp"
+  "hr-6_3";
+  grid-gap: 30px;
+}
+
+.project-6_3-grid h4 {
+  margin-bottom: 10px;
+}
+
+.project-6_3-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-6_3-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-6_3 {
+  grid-area: title-6_3;
+  text-align: center;
+}
+
+.description-6_3 {
+  grid-area: description-6_3;
+  text-align: center;
+}
+
+.description-6_3 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-6_3 a:hover,
+.description-6_3 a:active {
+  text-decoration: underline;
+}
+
+.image-6_3 {
+  grid-area: image-6_3;
+}
+
+.project-6_3-requirements {
+  grid-area: project-6_3-requirements;
+  text-align: center;
+}
+
+.project-6_3-power {
+  grid-area: project-6_3-power;
+}
+.project-6_3-power-exp {
+  grid-area: project-6_3-power-exp;
+  margin: auto;
+}
+
+.project-6_3-main {
+  grid-area: project-6_3-main;
+}
+.project-6_3-main-exp {
+  grid-area: project-6_3-main-exp;
+  margin: auto;
+}
+
+.hr-6_3 {
+  grid-area: hr-6_3;
+}
+
+@media screen and (min-width: 736px) {
+  .project-6_3-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-6_3 title-6_3"
+    "description-6_3 image-6_3"
+    "project-6_3-requirements project-6_3-requirements"
+    "project-6_3-power project-6_3-power-exp"
+    "project-6_3-main project-6_3-main-exp"
+    "hr-6_3 hr-6_3";
+    grid-gap: 50px;
+  }
+}

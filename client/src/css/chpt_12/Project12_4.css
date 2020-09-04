@@ -1,0 +1,104 @@
+.project-12_4-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-12_4"
+  "description-12_4"
+  "image-12_4"
+  "project-12_4-requirements"
+  "project-12_4-insert"
+  "project-12_4-insert-exp"
+  "project-12_4-remove"
+  "project-12_4-remove-exp"
+  "project-12_4-peek"
+  "project-12_4-peek-exp"
+  "hr-12_4";
+  grid-gap: 30px;
+}
+
+.project-12_4-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-12_4-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-12_4 {
+  grid-area: title-12_4;
+  text-align: center;
+}
+
+.description-12_4 {
+  grid-area: description-12_4;
+  text-align: center;
+}
+
+.description-12_4 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-12_4 a:hover,
+.description-12_4 a:active {
+  text-decoration: underline;
+}
+
+.image-12_4 {
+  grid-area: image-12_4;
+  display: inline-grid;
+}
+
+.project-12_4-requirements {
+  grid-area: project-12_4-requirements;
+  text-align: center;
+}
+
+.project-12_4-insert {
+  grid-area: project-12_4-insert;
+}
+.project-12_4-insert-exp {
+  grid-area: project-12_4-insert-exp;
+  margin: auto;
+}
+
+.project-12_4-remove {
+  grid-area: project-12_4-remove;
+}
+.project-12_4-remove-exp {
+  grid-area: project-12_4-remove-exp;
+  margin: auto;
+}
+
+.project-12_4-peek {
+  grid-area: project-12_4-peek;
+}
+.project-12_4-peek-exp {
+  grid-area: project-12_4-peek-exp;
+  margin: auto;
+}
+
+.hr-12_4 {
+  grid-area: hr-12_4;
+}
+
+@media screen and (min-width: 736px) {
+  .project-12_4-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-12_4 title-12_4"
+    "description-12_4 image-12_4"
+    "project-12_4-requirements project-12_4-requirements"
+    "project-12_4-insert project-12_4-insert-exp"
+    "project-12_4-remove project-12_4-remove-exp"
+    "project-12_4-peek project-12_4-peek-exp"
+    "hr-12_4 hr-12_4";
+    grid-gap: 50px;
+  }
+}

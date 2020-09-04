@@ -1,0 +1,98 @@
+.project-4_1-grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-4_1"
+  "description-4_1"
+  "image-4_1"
+  "project-4_1-requirements"
+  "project-4_1-remove"
+  "project-4_1-remove-exp"
+  "project-4_1-display"
+  "project-4_1-display-exp"
+  "project-4_1-main"
+  "project-4_1-main-exp"
+  "hr-4_1";
+}
+
+.project-4_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-4_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-4_1 {
+  grid-area: title-4_1;
+  text-align: center;
+}
+
+.description-4_1 {
+  grid-area: description-4_1;
+  text-align: center;
+  margin: auto;
+}
+
+.image-4_1 {
+  grid-area: image-4_1;
+  display: inline-grid;
+  text-align: center;
+}
+
+.project-4_1-requirements {
+  grid-area: project-4_1-requirements;
+  text-align: center;
+}
+
+.project-4_1-remove {
+  grid-area: project-4_1-remove;
+}
+.project-4_1-remove-exp {
+  grid-area: project-4_1-remove-exp;
+  margin: auto;
+  text-align: left;
+}
+
+.project-4_1-display {
+  grid-area: project-4_1-display;
+}
+.project-4_1-display-exp {
+  grid-area: project-4_1-display-exp;
+  margin: auto;
+}
+
+.project-4_1-main {
+  grid-area: project-4_1-main;
+}
+.project-4_1-main-exp {
+  grid-area: project-4_1-main-exp;
+  margin: auto;
+}
+
+.hr-4_1 {
+  grid-area: hr-4_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-4_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-4_1 title-4_1"
+    "description-4_1 image-4_1"
+    "project-4_1-requirements project-4_1-requirements"
+    "project-4_1-remove project-4_1-remove-exp"
+    "project-4_1-display project-4_1-display-exp"
+    "project-4_1-main project-4_1-main-exp"
+    "hr-4_1 hr-4_1";
+  }
+}

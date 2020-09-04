@@ -1,0 +1,115 @@
+.project-5_3-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-5_3"
+  "description-5_3"
+  "image-5_3"
+  "project-5_3-requirements"
+  "project-5_3-insert-first"
+  "project-5_3-insert-first-exp"
+  "project-5_3-delete-first"
+  "project-5_3-delete-first-exp"
+  "project-5_3-delete-after"
+  "project-5_3-delete-after-exp"
+  "project-5_3-display"
+  "project-5_3-display-exp"
+  "hr-5_3";
+  grid-gap: 30px;
+}
+
+.project-5_3-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-5_3-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-5_3 {
+  grid-area: title-5_3;
+  text-align: center;
+}
+
+.description-5_3 {
+  grid-area: description-5_3;
+  text-align: center;
+}
+
+.description-5_3 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-5_3 a:hover,
+.description-5_3 a:active {
+  text-decoration: underline;
+}
+
+.image-5_3 {
+  grid-area: image-5_3;
+  display: inline-grid;
+}
+
+.project-5_3-requirements {
+  grid-area: project-5_3-requirements;
+  text-align: center;
+}
+
+.project-5_3-insert-first {
+  grid-area: project-5_3-insert-first;
+}
+.project-5_3-insert-first-exp {
+  grid-area: project-5_3-insert-first-exp;
+  margin: auto;
+}
+
+.project-5_3-delete-first {
+  grid-area: project-5_3-delete-first;
+}
+.project-5_3-delete-first-exp {
+  grid-area: project-5_3-delete-first-exp;
+  margin: auto;
+}
+
+.project-5_3-delete-after {
+  grid-area: project-5_3-delete-after;
+}
+.project-5_3-delete-after-exp {
+  grid-area: project-5_3-delete-after-exp;
+  margin: auto;
+}
+
+.project-5_3-display {
+  grid-area: project-5_3-display;
+}
+.project-5_3-display-exp {
+  grid-area: project-5_3-display-exp;
+  margin: auto;
+}
+
+.hr-5_3 {
+  grid-area: hr-5_3;
+}
+
+@media screen and (min-width: 736px) {
+  .project-5_3-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-5_3 title-5_3"
+    "description-5_3 image-5_3"
+    "project-5_3-requirements project-5_3-requirements"
+    "project-5_3-insert-first project-5_3-insert-first-exp"
+    "project-5_3-delete-first project-5_3-delete-first-exp"
+    "project-5_3-delete-after project-5_3-delete-after-exp"
+    "project-5_3-display project-5_3-display-exp"
+    "hr-5_3 hr-5_3";
+    grid-gap: 50px;
+  }
+}

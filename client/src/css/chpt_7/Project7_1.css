@@ -1,0 +1,101 @@
+.project-7_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-7_1"
+  "description-7_1"
+  "image-7_1"
+  "project-7_1-requirements"
+  "project-7_1-partition"
+  "project-7_1-partition-exp"
+  "project-7_1-manual-sort"
+  "project-7_1-manual-sort-exp"
+  "project-7_1-swap"
+  "project-7_1-swap-exp"
+  "hr-7_1";
+}
+
+.project-7_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-7_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.project-7_1-grid a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.project-7_1-grid a:hover,
+.project-7_1-grid a:active {
+  text-decoration: underline;
+}
+
+.title-7_1 {
+  grid-area: title-7_1;
+  text-align: center;
+}
+
+.description-7_1 {
+  grid-area: description-7_1;
+  text-align: center;
+}
+
+.image-7_1 {
+  grid-area: image-7_1;
+  display: inline-grid;
+}
+
+.project-7_1-requirements {
+  grid-area: project-7_1-requirements;
+  text-align: center;
+}
+
+.project-7_1-partition {
+  grid-area: project-7_1-partition;
+}
+.project-7_1-partition-exp {
+  grid-area: project-7_1-partition-exp;
+}
+
+.project-7_1-manual-sort {
+  grid-area: project-7_1-manual-sort;
+}
+.project-7_1-manual-sort-exp {
+  grid-area: project-7_1-manual-sort-exp;
+}
+
+.project-7_1-swap {
+  grid-area: project-7_1-swap;
+}
+.project-7_1-swap-exp {
+  grid-area: project-7_1-swap-exp;
+}
+
+.hr-7_1 {
+  grid-area: hr-7_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-7_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-7_1 title-7_1"
+    "description-7_1 image-7_1"
+    "project-7_1-requirements project-7_1-requirements"
+    "project-7_1-partition project-7_1-partition-exp"
+    "project-7_1-manual-sort project-7_1-manual-sort-exp"
+    "project-7_1-swap project-7_1-swap-exp"
+    "hr-7_1 hr-7_1";
+  }
+}

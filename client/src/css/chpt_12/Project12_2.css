@@ -1,0 +1,93 @@
+.project-12_2-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-12_2"
+  "description-12_2"
+  "image-12_2"
+  "project-12_2-requirements"
+  "project-12_2-toss"
+  "project-12_2-toss-exp"
+  "project-12_2-restore"
+  "project-12_2-restore-exp"
+  "hr-12_2";
+  grid-gap: 30px;
+}
+
+.project-12_2-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-12_2-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-12_2 {
+  grid-area: title-12_2;
+  text-align: center;
+}
+
+.description-12_2 {
+  grid-area: description-12_2;
+  text-align: center;
+}
+
+.description-12_2 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-12_2 a:hover,
+.description-12_2 a:active {
+  text-decoration: underline;
+}
+
+.image-12_2 {
+  grid-area: image-12_2;
+  display: inline-grid;
+}
+
+.project-12_2-requirements {
+  grid-area: project-12_2-requirements;
+  text-align: center;
+}
+
+.project-12_2-toss {
+  grid-area: project-12_2-toss;
+}
+.project-12_2-toss-exp {
+  grid-area: project-12_2-toss-exp;
+  margin: auto;
+}
+
+.project-12_2-restore {
+  grid-area: project-12_2-restore;
+}
+.project-12_2-restore-exp {
+  grid-area: project-12_2-restore-exp;
+  margin: auto;
+}
+
+.hr-12_2 {
+  grid-area: hr-12_2;
+}
+
+@media screen and (min-width: 736px) {
+  .project-12_2-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-12_2 title-12_2"
+    "description-12_2 image-12_2"
+    "project-12_2-requirements project-12_2-requirements"
+    "project-12_2-toss project-12_2-toss-exp"
+    "project-12_2-restore project-12_2-restore-exp"
+    "hr-12_2 hr-12_2";
+    grid-gap: 50px;
+  }
+}

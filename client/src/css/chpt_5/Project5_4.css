@@ -1,0 +1,115 @@
+.project-5_4-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-5_4"
+  "description-5_4"
+  "image-5_4"
+  "project-5_4-requirements"
+  "project-5_4-push"
+  "project-5_4-push-exp"
+  "project-5_4-insert-first"
+  "project-5_4-insert-first-exp"
+  "project-5_4-pop"
+  "project-5_4-pop-exp"
+  "project-5_4-delete-first"
+  "project-5_4-delete-first-exp"
+  "hr-5_4";
+  grid-gap: 30px;
+}
+
+.project-5_4-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-5_4-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-5_4 {
+  grid-area: title-5_4;
+  text-align: center;
+}
+
+.description-5_4 {
+  grid-area: description-5_4;
+  text-align: center;
+}
+
+.description-5_4 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-5_4 a:hover,
+.description-5_4 a:active {
+  text-decoration: underline;
+}
+
+.image-5_4 {
+  grid-area: image-5_4;
+  display: inline-grid;
+}
+
+.project-5_4-requirements {
+  grid-area: project-5_4-requirements;
+  text-align: center;
+}
+
+.project-5_4-push {
+  grid-area: project-5_4-push;
+}
+.project-5_4-push-exp {
+  grid-area: project-5_4-push-exp;
+  margin: auto;
+}
+
+.project-5_4-insert-first {
+  grid-area: project-5_4-insert-first;
+}
+.project-5_4-insert-first-exp {
+  grid-area: project-5_4-insert-first-exp;
+  margin: auto;
+}
+
+.project-5_4-pop {
+  grid-area: project-5_4-pop;
+}
+.project-5_4-pop-exp {
+  grid-area: project-5_4-pop-exp;
+  margin: auto;
+}
+
+.project-5_4-delete-first {
+  grid-area: project-5_4-delete-first;
+}
+.project-5_4-delete-first-exp {
+  grid-area: project-5_4-delete-first-exp;
+  margin: auto;
+}
+
+.hr-5_4 {
+  grid-area: hr-5_4;
+}
+
+@media screen and (min-width: 736px) {
+  .project-5_4-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-5_4 title-5_4"
+    "description-5_4 image-5_4"
+    "project-5_4-requirements project-5_4-requirements"
+    "project-5_4-push project-5_4-push-exp"
+    "project-5_4-insert-first project-5_4-insert-first-exp"
+    "project-5_4-pop project-5_4-pop-exp"
+    "project-5_4-delete-first project-5_4-delete-first-exp"
+    "hr-5_4 hr-5_4";
+    grid-gap: 50px;
+  }
+}

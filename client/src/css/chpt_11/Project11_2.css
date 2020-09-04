@@ -1,0 +1,114 @@
+.project-11_2-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-11_2"
+  "description-11_2"
+  "image-11_2"
+  "project-11_2-requirements"
+  "project-11_2-hash"
+  "project-11_2-hash-exp"
+  "project-11_2-insert"
+  "project-11_2-insert-exp"
+  "project-11_2-delete"
+  "project-11_2-delete-exp"
+  "project-11_2-find"
+  "project-11_2-find-exp"
+  "hr-11_2";
+  grid-gap: 30px;
+}
+.project-11_2-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-11_2-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-11_2 {
+  grid-area: title-11_2;
+  text-align: center;
+}
+
+.description-11_2 {
+  grid-area: description-11_2;
+  text-align: center;
+}
+
+.description-11_2 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-11_2 a:hover,
+.description-11_2 a:active {
+  text-decoration: underline;
+}
+
+.image-11_2 {
+  grid-area: image-11_2;
+  display: inline-grid;
+}
+
+.project-11_2-requirements {
+  grid-area: project-11_2-requirements;
+  text-align: center;
+}
+
+.project-11_2-hash {
+  grid-area: project-11_2-hash;
+}
+.project-11_2-hash-exp {
+  grid-area: project-11_2-hash-exp;
+  margin: auto;
+}
+
+.project-11_2-insert {
+  grid-area: project-11_2-insert;
+}
+.project-11_2-insert-exp {
+  grid-area: project-11_2-insert-exp;
+  margin: auto;
+}
+
+.project-11_2-delete {
+  grid-area: project-11_2-delete;
+}
+.project-11_2-delete-exp {
+  grid-area: project-11_2-delete-exp;
+  margin: auto;
+}
+
+.project-11_2-find {
+  grid-area: project-11_2-find;
+}
+.project-11_2-find-exp {
+  grid-area: project-11_2-find-exp;
+  margin: auto;
+}
+
+.hr-11_2 {
+  grid-area: hr-11_2;
+}
+
+@media screen and (min-width: 736px) {
+  .project-11_2-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-11_2 title-11_2"
+    "description-11_2 image-11_2"
+    "project-11_2-requirements project-11_2-requirements"
+    "project-11_2-hash project-11_2-hash-exp"
+    "project-11_2-insert project-11_2-insert-exp"
+    "project-11_2-delete project-11_2-delete-exp"
+    "project-11_2-find project-11_2-find-exp"
+    "hr-11_2 hr-11_2";
+    grid-gap: 50px;
+  }
+}

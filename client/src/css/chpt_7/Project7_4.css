@@ -1,0 +1,90 @@
+.project-7_4-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-7_4"
+  "description-7_4"
+  "project-7_4-requirements"
+  "project-7_4-randon-element"
+  "project-7_4-randon-element-exp"
+  "project-7_4-partition"
+  "project-7_4-partition-exp"
+  "hr-7_4";
+  grid-gap: 30px;
+}
+
+.project-7_4-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-7_4-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-7_4 {
+  grid-area: title-7_4;
+  text-align: center;
+}
+
+.description-7_4 {
+  grid-area: description-7_4;
+  text-align: center;
+}
+
+.description-7_4 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-7_4 a:hover,
+.description-7_4 a:active {
+  text-decoration: underline;
+}
+
+.image-7_4 {
+  grid-area: image-7_4;
+  display: inline-grid;
+}
+
+.project-7_4-requirements {
+  grid-area: project-7_4-requirements;
+  text-align: center;
+}
+
+.project-7_4-randon-element {
+  grid-area: project-7_4-randon-element;
+}
+.project-7_4-randon-element-exp {
+  grid-area: project-7_4-randon-element-exp;
+}
+
+.project-7_4-partition {
+  grid-area: project-7_4-partition;
+}
+.project-7_4-partition-exp {
+  grid-area: project-7_4-partition-exp;
+}
+
+.hr-7_4 {
+  grid-area: hr-7_4;
+}
+
+@media screen and (min-width: 736px) {
+  .project-7_4-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-7_4 title-7_4"
+    "description-7_4 description-7_4"
+    "project-7_4-requirements project-7_4-requirements"
+    "project-7_4-randon-element project-7_4-randon-element-exp"
+    "project-7_4-partition project-7_4-partition-exp"
+    "hr-7_4 hr-7_4";
+    grid-gap: 50px;
+  }
+}

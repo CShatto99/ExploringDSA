@@ -1,0 +1,115 @@
+.project-11_5-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-11_5"
+  "description-11_5"
+  "image-11_5"
+  "project-11_5-requirements"
+  "project-11_5-insert"
+  "project-11_5-insert-exp"
+  "project-11_5-insert_BST"
+  "project-11_5-insert_BST-exp"
+  "project-11_5-find"
+  "project-11_5-find-exp"
+  "project-11_5-find_BST"
+  "project-11_5-find_BST-exp"
+  "hr-11_5";
+  grid-gap: 30px;
+}
+
+.project-11_5-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-11_5-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-11_5 {
+  grid-area: title-11_5;
+  text-align: center;
+}
+
+.description-11_5 {
+  grid-area: description-11_5;
+  text-align: center;
+}
+
+.description-11_5 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-11_5 a:hover,
+.description-11_5 a:active {
+  text-decoration: underline;
+}
+
+.image-11_5 {
+  grid-area: image-11_5;
+  display: inline-grid;
+}
+
+.project-11_5-requirements {
+  grid-area: project-11_5-requirements;
+  text-align: center;
+}
+
+.project-11_5-insert {
+  grid-area: project-11_5-insert;
+}
+.project-11_5-insert-exp {
+  grid-area: project-11_5-insert-exp;
+  margin: auto;
+}
+
+.project-11_5-insert_BST {
+  grid-area: project-11_5-insert_BST;
+}
+.project-11_5-insert_BST-exp {
+  grid-area: project-11_5-insert_BST-exp;
+  margin: auto;
+}
+
+.project-11_5-find {
+  grid-area: project-11_5-find;
+}
+.project-11_5-find-exp {
+  grid-area: project-11_5-find-exp;
+  margin: auto;
+}
+
+.project-11_5-find_BST {
+  grid-area: project-11_5-find_BST;
+}
+.project-11_5-find_BST-exp {
+  grid-area: project-11_5-find_BST-exp;
+  margin: auto;
+}
+
+.hr-11_5 {
+  grid-area: hr-11_5;
+}
+
+@media screen and (min-width: 736px) {
+  .project-11_5-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-11_5 title-11_5"
+    "description-11_5 image-11_5"
+    "project-11_5-requirements project-11_5-requirements"
+    "project-11_5-insert project-11_5-insert-exp"
+    "project-11_5-insert_BST project-11_5-insert_BST-exp"
+    "project-11_5-find project-11_5-find-exp"
+    "project-11_5-find_BST project-11_5-find_BST-exp"
+    "hr-11_5 hr-11_5";
+    grid-gap: 50px;
+  }
+}

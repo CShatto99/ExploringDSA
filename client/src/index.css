@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Titillium Web', 'sans-serif';
+  background-color: #FCFCFC;
+  color: #1C1C1C;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #373737 !important;
+}
+
+nav .container {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  background-color: #eee;
+  display: inline-block;
+  width: 100%;
+  overflow-x: scroll;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}

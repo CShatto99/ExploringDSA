@@ -1,0 +1,96 @@
+.project-6_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-6_1"
+  "description-6_1"
+  "image-6_1"
+  "project-6_1-requirements"
+  "project-6_1-multiply"
+  "project-6_1-multiply-exp"
+  "project-6_1-main"
+  "project-6_1-main-exp"
+  "hr-6_1";
+}
+
+.project-6_1-grid h4 {
+  margin-bottom: 10px;
+}
+
+.project-6_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-6_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-6_1 {
+  grid-area: title-6_1;
+  text-align: center;
+}
+
+.description-6_1 {
+  grid-area: description-6_1;
+  text-align: center;
+}
+
+.description-6_1 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-6_1 a:hover,
+.description-6_1 a:active {
+  text-decoration: underline;
+}
+
+.image-6_1 {
+  grid-area: image-6_1;
+}
+
+.project-6_1-requirements {
+  grid-area: project-6_1-requirements;
+  text-align: center;
+}
+
+.project-6_1-multiply {
+  grid-area: project-6_1-multiply;
+}
+.project-6_1-multiply-exp {
+  grid-area: project-6_1-multiply-exp;
+  margin: auto;
+}
+
+.project-6_1-main {
+  grid-area: project-6_1-main;
+}
+.project-6_1-main-exp {
+  grid-area: project-6_1-main-exp;
+  margin: auto;
+}
+
+.hr-6_1 {
+  grid-area: hr-6_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-6_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-6_1 title-6_1"
+    "description-6_1 image-6_1"
+    "project-6_1-requirements project-6_1-requirements"
+    "project-6_1-multiply project-6_1-multiply-exp"
+    "project-6_1-main project-6_1-main-exp"
+    "hr-6_1 hr-6_1";
+  }
+}

@@ -1,0 +1,83 @@
+.project-10_3-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-10_3"
+  "description-10_3"
+  "image-10_3"
+  "project-10_3-requirements"
+  "project-10_3-requirements-exp"
+  "project-10_3-sort"
+  "project-10_3-sort-exp"
+  "hr-10_3";
+  grid-gap: 30px;
+}
+
+.project-10_3-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-10_3-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-10_3 {
+  grid-area: title-10_3;
+  text-align: center;
+}
+
+.description-10_3 {
+  grid-area: description-10_3;
+  text-align: center;
+}
+
+.description-10_3 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-10_3 a:hover,
+.description-10_3 a:active {
+  text-decoration: underline;
+}
+
+.image-10_3 {
+  grid-area: image-10_3;
+  display: inline-grid;
+}
+
+.project-10_3-requirements {
+  grid-area: project-10_3-requirements;
+  text-align: center;
+}
+
+.project-10_3-sort {
+  grid-area: project-10_3-sort;
+}
+.project-10_3-sort-exp {
+  grid-area: project-10_3-sort-exp;
+  margin: auto;
+}
+
+.hr-10_3 {
+  grid-area: hr-10_3;
+}
+
+@media screen and (min-width: 736px) {
+  .project-10_3-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-10_3 title-10_3"
+    "description-10_3 image-10_3"
+    "project-10_3-requirements project-10_3-requirements"
+    "project-10_3-sort project-10_3-sort-exp"
+    "hr-10_3 hr-10_3";
+    grid-gap: 50px;
+  }
+}

@@ -1,0 +1,87 @@
+.home-grid {
+  font-size: 16px;
+  margin: 94px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "home-page-title"
+    "home-page-grid";
+  grid-gap: 30px;
+}
+
+.home-page-title {
+  grid-area: home-page-title;
+  height: 64px;
+  text-align: center;
+}
+
+.home-page-title h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "home-page-title"
+    "home-page-description"
+    "home-page-image"
+    "home-page-hr";
+  grid-gap: 50px;
+}
+
+.home-page-grid {
+  grid-area: home-page-grid;
+  margin: 0;
+}
+
+.home-page-description {
+  grid-area: home-page-description;
+  text-align: center;
+  margin: auto;
+}
+
+.home-page-image {
+  grid-area: home-page-image;
+  display: inline-block;
+  text-align: center;
+}
+
+.home-page-image a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.home-page-image a:hover,
+.home-page-image a:active {
+  color: #DADEF9;
+}
+
+.home-page-hr {
+  grid-area: home-page-hr;
+}
+
+@media screen and (min-width: 768px) {
+  .home-grid {
+    margin: 94px 0 30px 0;
+    grid-template-columns:  1fr 900px 1fr;
+    grid-template-areas:
+    ". home-page-title ."
+    ". home-page-grid .";
+    grid-gap: 30px;
+  }
+
+  .home-page-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "home-page-title home-page-title"
+    "home-page-description home-page-image"
+    "home-page-hr home-page-hr";
+    grid-gap: 50px;
+  }
+}

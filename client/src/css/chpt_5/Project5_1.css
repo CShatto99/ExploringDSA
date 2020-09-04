@@ -1,0 +1,115 @@
+.project-5_1-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-5_1"
+  "description-5_1"
+  "image-5_1"
+  "project-5_1-requirements"
+  "project-5_1-queue-insert"
+  "project-5_1-queue-insert-exp"
+  "project-5_1-list-insert"
+  "project-5_1-list-insert-exp"
+  "project-5_1-queue-remove"
+  "project-5_1-queue-remove-exp"
+  "project-5_1-list-remove"
+  "project-5_1-list-remove-exp"
+  "hr-5_1";
+}
+
+.project-5_1-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-5_1-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-5_1 {
+  grid-area: title-5_1;
+  text-align: center;
+}
+
+.description-5_1 {
+  grid-area: description-5_1;
+  text-align: center;
+}
+
+.description-5_1 a {
+  color: #1C1C1C;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.description-5_1 a:hover,
+.description-5_1 a:active {
+  text-decoration: underline;
+}
+
+.image-5_1 {
+  grid-area: image-5_1;
+  display: inline-grid;
+}
+
+.project-5_1-requirements {
+  grid-area: project-5_1-requirements;
+  text-align: center;
+}
+
+.project-5_1-queue-insert {
+  grid-area: project-5_1-queue-insert;
+}
+.project-5_1-queue-insert-exp {
+  grid-area: project-5_1-queue-insert-exp;
+  margin: auto;
+}
+
+.project-5_1-list-insert {
+  grid-area: project-5_1-list-insert;
+}
+.project-5_1-list-insert-exp {
+  grid-area: project-5_1-list-insert-exp;
+  margin: auto;
+}
+
+.project-5_1-queue-remove {
+  grid-area: project-5_1-queue-remove;
+}
+.project-5_1-queue-remove-exp {
+  grid-area: project-5_1-queue-remove-exp;
+  margin: auto;
+}
+
+.project-5_1-list-remove {
+  grid-area: project-5_1-list-remove;
+}
+.project-5_1-list-remove-exp {
+  grid-area: project-5_1-list-remove-exp;
+  margin: auto;
+}
+
+.hr-5_1 {
+  grid-area: hr-5_1;
+}
+
+@media screen and (min-width: 736px) {
+  .project-5_1-grid {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-5_1 title-5_1"
+    "description-5_1 image-5_1"
+    "project-5_1-requirements project-5_1-requirements"
+    "project-5_1-queue-insert project-5_1-queue-insert-exp"
+    "project-5_1-list-insert project-5_1-list-insert-exp"
+    "project-5_1-queue-remove project-5_1-queue-remove-exp"
+    "project-5_1-list-remove project-5_1-list-remove-exp"
+    "hr-5_1 hr-5_1";
+  }
+}

@@ -1,0 +1,49 @@
+.linked_lists-grid {
+  font-size: 16px;
+  margin: 94px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title"
+  "project-5_1-grid"
+  "project-5_2-grid"
+  "project-5_3-grid"
+  "project-5_4-grid";
+  grid-gap: 30px;
+}
+
+.linked_lists-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.project-5_1-grid {
+  grid-area: project-5_1-grid;
+}
+
+.project-5_2-grid {
+  grid-area: project-5_2-grid;
+}
+
+.project-5_3-grid {
+  grid-area: project-5_3-grid;
+}
+
+.project-5_4-grid {
+  grid-area: project-5_4-grid;
+}
+
+@media screen and (min-width: 736px) {
+  .linked_lists-grid {
+    margin: 94px 0 30px 0;
+    font-size: 18px;
+    grid-template-columns:  1fr 900px 1fr;
+    grid-template-areas:
+    ". title ."
+    ". project-5_1-grid ."
+    ". project-5_2-grid ."
+    ". project-5_3-grid ."
+    ". project-5_4-grid .";
+    grid-gap: 50px;
+  }
+}

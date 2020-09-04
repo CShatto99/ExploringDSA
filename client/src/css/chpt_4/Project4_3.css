@@ -1,0 +1,110 @@
+.project-4_3-grid {
+  color: #1C1C1C;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title-4_3"
+  "description-4_3"
+  "image-4_3"
+  "project-4_3-requirements"
+  "project-4_3-push_top"
+  "project-4_3-push_top-exp"
+  "project-4_3-pop_top"
+  "project-4_3-pop_top-exp"
+  "project-4_3-push_bottom"
+  "project-4_3-push_bottom-exp"
+  "project-4_3-pop_bottom"
+  "project-4_3-pop_bottom-exp"
+  "hr-4_3";
+}
+
+.project-4_3-grid li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.project-4_3-grid li::before {
+    content: '\2022';      /* Unicode for • character */
+    position: absolute;
+    left: -1em;
+    top: -.15em;
+    font-size: 1.1em;
+}
+
+.title-4_3 {
+  grid-area: title-4_3;
+  text-align: center;
+}
+
+.description-4_3 {
+  grid-area: description-4_3;
+  text-align: center;
+}
+
+.image-4_3 {
+  grid-area: image-4_3;
+  display: inline-grid;
+}
+
+.image-4_3 img {
+  margin: auto;
+}
+
+.project-4_3-requirements {
+  grid-area: project-4_3-requirements;
+  text-align: center;
+}
+
+.project-4_3-push_top {
+  grid-area: project-4_3-push_top;
+}
+.project-4_3-push_top-exp {
+  grid-area: project-4_3-push_top-exp;
+  margin: auto;
+}
+
+.project-4_3-pop_top {
+  grid-area: project-4_3-pop_top;
+}
+.project-4_3-pop_top-exp {
+  grid-area: project-4_3-pop_top-exp;
+  margin: auto;
+}
+
+.project-4_3-push_bottom {
+  grid-area: project-4_3-push_bottom;
+}
+.project-4_3-push_bottom-exp {
+  grid-area: project-4_3-push_bottom-exp;
+  margin: auto;
+}
+
+.project-4_3-pop_bottom {
+  grid-area: project-4_3-pop_bottom;
+}
+.project-4_3-pop_bottom-exp {
+  grid-area: project-4_3-pop_bottom-exp;
+  margin: auto;
+}
+
+.hr-4_3 {
+  grid-area: hr-4_3;
+}
+
+@media screen and (min-width: 736px) {
+  .project-4_3-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title-4_3 title-4_3"
+    "description-4_3 image-4_3"
+    "project-4_3-requirements project-4_3-requirements"
+    "project-4_3-push_top project-4_3-push_top-exp"
+    "project-4_3-pop_top project-4_3-pop_top-exp"
+    "project-4_3-push_bottom project-4_3-push_bottom-exp"
+    "project-4_3-pop_bottom project-4_3-pop_bottom-exp"
+    "hr-4_3 hr-4_3";
+    grid-gap: 50px;
+  }
+}
