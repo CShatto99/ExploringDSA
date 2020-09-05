@@ -47,7 +47,7 @@ const Project111 = () => {
       </div>
 
       <pre className="project-11_1-quadratic-probe">
-        <code>
+        <code className="language-js">
           {`public int quadraticProbe(int hashVal, int stepNum) {
 
   return (hashVal + stepNum*stepNum);
@@ -57,7 +57,7 @@ const Project111 = () => {
       </pre>
 
       <pre className="project-11_1-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(DataItem newItem) {
 
   int stepNum = 0;
@@ -79,7 +79,7 @@ const Project111 = () => {
       </pre>
 
       <pre className="project-11_1-delete">
-        <code>
+        <code className="language-js">
           {`public DataItem delete(int key) {
 
   int stepNum = 0;
@@ -109,7 +109,7 @@ const Project111 = () => {
       </pre>
 
       <pre className="project-11_1-find">
-        <code>
+        <code className="language-js">
           {`public DataItem find(int key) {
 
   int stepNum = 0;

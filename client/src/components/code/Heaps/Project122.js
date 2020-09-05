@@ -54,7 +54,7 @@ const Project122 = () => {
       </div>
 
       <pre className="project-12_2-toss">
-        <code>
+        <code className="language-js">
           {`public boolean toss(int key) {
 
   numTosses++;
@@ -72,7 +72,7 @@ const Project122 = () => {
       </pre>
 
       <pre className="project-12_2-restore">
-        <code>
+        <code className="language-js">
           {`public void restoreHeap() {
 
   for(int i = currentSize - 1; i >= numTosses; i--)

@@ -37,7 +37,7 @@ const Project44 = () => {
       </div>
 
       <pre className="project-4_4-insert">
-        <code>
+        <code className="language-js">
 {`public void insert(long value) {
 
   if(nItems < maxSize)
@@ -48,7 +48,7 @@ const Project44 = () => {
       </pre>
 
       <pre className="project-4_4-remove">
-        <code>
+        <code className="language-js">
 {`public long remove() {
 
   for(int i = 0; i < maxSize-1; i++) {
@@ -76,7 +76,7 @@ const Project44 = () => {
 
 
       <pre className="project-4_4-display">
-        <code>
+        <code className="language-js">
 {`public void display() {
 
   for(int i = 0; i < maxSize; i++) {

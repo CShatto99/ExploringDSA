@@ -54,7 +54,7 @@ const Project53 = () => {
       </div>
 
       <pre className="project-5_3-insert-first">
-        <code>
+        <code className="language-js">
           {`public void insertFirst(int data) {
 
   Node newNode = new Node(data);
@@ -73,7 +73,7 @@ const Project53 = () => {
       </pre>
 
       <pre className="project-5_3-delete-first">
-        <code>
+        <code className="language-js">
           {`public Node deleteFirst() {
 
   Node first = last.next;
@@ -96,7 +96,7 @@ const Project53 = () => {
       </pre>
 
       <pre className="project-5_3-delete-after">
-        <code>
+        <code className="language-js">
           {`public Node deleteAfter(int counter) {
 
   Node current = last.next, previous = last;
@@ -125,7 +125,7 @@ const Project53 = () => {
       </pre>
 
       <pre className="project-5_3-display">
-        <code>
+        <code className="language-js">
           {`public void displayCircularList() {
 
   Node current = last.next;

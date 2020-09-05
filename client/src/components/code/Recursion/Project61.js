@@ -48,7 +48,7 @@ const Project6_1 = () => {
       </div>
 
       <pre className="project-6_1-multiply">
-        <code>
+        <code className="language-js">
           {`public static int mult(int x, int y) {
   if(x == 0 || y == )
     return 0;
@@ -64,7 +64,7 @@ const Project6_1 = () => {
       </pre>
 
       <pre className="project-6_1-main">
-        <code>
+        <code className="language-js">
           {`public static void main(String[] args) {
 
   int x = 3, y = 5, product = mult(x, y);
@@ -107,7 +107,7 @@ const Project6_1 = () => {
           <b>Output:</b>
         </h4>
         <pre>
-          <code>
+          <code className="language-js">
             {`Current value of y: 3
 Current value of y: 2
 Current value of y: 1

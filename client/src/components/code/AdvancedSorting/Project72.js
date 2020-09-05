@@ -46,7 +46,7 @@ const Project72 = () => {
       </div>
 
       <pre className="project-7_2-quicksort">
-        <code>
+        <code className="language-js">
           {`public void quickSortCall(int left, int right) {
 
   int size = right-left+1;
@@ -69,7 +69,7 @@ const Project72 = () => {
       </pre>
 
       <pre className="project-7_2-partition">
-        <code>
+        <code className="language-js">
           {`public int partitionIt(int left, int right, int pivot) {
 
   int leftPtr = left;
@@ -102,7 +102,7 @@ const Project72 = () => {
       </pre>
 
       <pre className="project-7_2-median">
-        <code>
+        <code className="language-js">
           {`public int 
 medianOf3(int left, int right) {
 
@@ -126,7 +126,7 @@ medianOf3(int left, int right) {
       </pre>
 
       <pre className="project-7_2-swap">
-        <code>
+        <code className="language-js">
           {`public void swap(int a, int b) {
 
   comparisons+=3;
@@ -140,7 +140,7 @@ medianOf3(int left, int right) {
       </pre>
 
       <pre className="project-7_2-display">
-        <code>
+        <code className="language-js">
           {`public void algoInfo() {
 
   System.out.println("Elements: " + nItems);

@@ -1,5 +1,4 @@
 .project-4_1-grid {
-  width: 100%;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr;
@@ -82,7 +81,7 @@
   grid-area: hr-4_1;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .project-4_1-grid {
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;

@@ -57,7 +57,7 @@ const Project124 = () => {
       </div>
 
       <pre className="project-12_4-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(int data) {
 
   nItems++;
@@ -112,7 +112,7 @@ public void insertBST(int data) {
       </pre>
 
       <pre className="project-12_4-remove">
-        <code>
+        <code className="language-js">
           {`public int remove() {
 
   nItems--;
@@ -141,7 +141,7 @@ public int removeMax() {
       </pre>
 
       <pre className="project-12_4-peek">
-        <code>
+        <code className="language-js">
           {`public int peek() {
 
   return BST.findMax();

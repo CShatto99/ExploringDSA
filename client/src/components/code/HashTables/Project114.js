@@ -49,7 +49,7 @@ const Project114 = () => {
       </div>
 
       <pre className="project-11_4-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(DataItem newItem) {
 
   int key = newItem.getKey(),
@@ -75,7 +75,7 @@ const Project114 = () => {
       </pre>
 
       <pre className="project-11_4-re-hash">
-        <code>
+        <code className="language-js">
           {`public void rehash() {
 
   int newSize = arraySize * 2;
@@ -103,7 +103,7 @@ const Project114 = () => {
       </pre>
 
       <pre className="project-11_4-is-prime">
-        <code>
+        <code className="language-js">
           {`public boolean isPrime(int num) {
 
   int sqrt = (int)Math.sqrt(num) + 1;

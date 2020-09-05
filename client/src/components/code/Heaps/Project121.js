@@ -45,7 +45,7 @@ const Project121 = () => {
       </div>
 
       <pre className="project-12_1-insert">
-        <code>
+        <code className="language-js">
           {`public boolean insert(int key) {
 
   if(currentSize == maxSize)
@@ -63,7 +63,7 @@ const Project121 = () => {
       </pre>
 
       <pre className="project-12_1-trickle-up">
-        <code>
+        <code className="language-js">
           {`public void trickleUp(int index) {
 
   int parent = (index - 1) / 2;
@@ -84,7 +84,7 @@ const Project121 = () => {
       </pre>
 
       <pre className="project-12_1-remove">
-        <code>
+        <code className="language-js">
           {`public Node remove() {
 
   Node root = heapArray[0];
@@ -99,7 +99,7 @@ const Project121 = () => {
       </pre>
 
       <pre className="project-12_1-trickle-down">
-        <code>
+        <code className="language-js">
           {`public void trickleDown(int index) {
 
   int largerChild;

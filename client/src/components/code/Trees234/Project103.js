@@ -44,7 +44,7 @@ const Project10_3 = () => {
       </div>
 
       <pre className="project-10_3-sort">
-        <code>
+        <code className="language-js">
           {`public void sort(int dataItems[], int size) {
 
   int in, out, min;

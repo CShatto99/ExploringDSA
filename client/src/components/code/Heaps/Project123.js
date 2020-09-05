@@ -46,7 +46,7 @@ const Project123 = () => {
       </div>
 
       <pre className="project-12_3-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(int key) {
 
   PQHeap.heapInsert(key);
@@ -70,7 +70,7 @@ public boolean heapInsert(int key) {
       </pre>
 
       <pre className="project-12_3-remove">
-        <code>
+        <code className="language-js">
           {`public int remove() {
 
   nItems--;
@@ -91,7 +91,7 @@ public Node heapRemove() {
       </pre>
 
       <pre className="project-12_3-peek">
-        <code>
+        <code className="language-js">
           {`public int peek() {
 
   return PQHeap.heapPeek().getKey();

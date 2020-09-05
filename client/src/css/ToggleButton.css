@@ -20,7 +20,7 @@
   background: #F4F5F8;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .toggle-button {
     display: flex;
     flex-direction: column;

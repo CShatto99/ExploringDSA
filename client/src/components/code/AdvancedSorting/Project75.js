@@ -57,7 +57,7 @@ const Project75 = () => {
       </div>
 
       <pre className="project-7_5-radix-sort">
-        <code>
+        <code className="language-js">
           {`public void radixSort() {
 
   int max = getMax();
@@ -70,7 +70,7 @@ const Project75 = () => {
       </pre>
 
       <pre className="project-7_5-get-max">
-        <code>
+        <code className="language-js">
           {`public int getMax() {
 
   int max = arr[0];
@@ -89,7 +89,7 @@ const Project75 = () => {
       </pre>
 
       <pre className="project-7_5-count-sort">
-        <code>
+        <code className="language-js">
           {`public void countSort(int exp) {
 
   int[] output = new int[n];

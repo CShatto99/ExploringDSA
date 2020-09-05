@@ -45,7 +45,7 @@ const Project52 = () => {
       </div>
 
       <pre className="project-5_2-insert-head">
-        <code>
+        <code className="language-js">
           {`// DEQUE CLASS
 public void insertFront(int data) {
 
@@ -72,7 +72,7 @@ public void insertHead(int data) {
       </pre>
 
       <pre className="project-5_2-insert-tail">
-        <code>
+        <code className="language-js">
           {`// DEQUE CLASS
 public void insertBack(int data) {
 
@@ -102,7 +102,7 @@ public void insertTail(int data) {
       </pre>
 
       <pre className="project-5_2-delete-head">
-        <code>
+        <code className="language-js">
           {`// DEQUE CLASS
 public Node removeFront() {
 
@@ -130,7 +130,7 @@ public Node deleteHead() {
       </pre>
 
       <pre className="project-5_2-delete-tail">
-        <code>
+        <code className="language-js">
           {`// DEQUE CLASS
 public Node removeBack() {
 

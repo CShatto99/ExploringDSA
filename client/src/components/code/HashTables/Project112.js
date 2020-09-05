@@ -50,7 +50,7 @@ const Project112 = () => {
       </div>
 
       <pre className="project-11_2-hash">
-        <code>
+        <code className="language-js">
           {`public int hashFunc(String s) {
 
   int hashVal = 0;
@@ -69,7 +69,7 @@ const Project112 = () => {
       </pre>
 
       <pre className="project-11_2-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(DataItem newItem) {
 
   String key = newItem.getKey();
@@ -89,7 +89,7 @@ const Project112 = () => {
       </pre>
 
       <pre className="project-11_2-delete">
-        <code>
+        <code className="language-js">
           {`public DataItem delete(String key) {
 
   int hashVal = hashFunc(key);
@@ -117,7 +117,7 @@ const Project112 = () => {
       </pre>
 
       <pre className="project-11_2-find">
-        <code>
+        <code className="language-js">
           {`public DataItem find(String key) {
 
   int hashVal = hashFunc(key);

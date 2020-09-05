@@ -37,7 +37,7 @@ const Project73 = () => {
       </div>
 
       <pre className="project-7_3-median">
-        <code>
+        <code className="language-js">
           {`public void findMedian() {
 
     median(0, nElems-1);
@@ -73,7 +73,7 @@ public void median(int left, int right) {
       </pre>
 
       <pre className="project-7_3-partition">
-        <code>
+        <code className="language-js">
           {`public int partitionIt(int left, int right) {
 
   int pivot = arr[(left + right) / 2];

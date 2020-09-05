@@ -84,7 +84,7 @@
   grid-area: hr-7_5;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .project-7_5-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

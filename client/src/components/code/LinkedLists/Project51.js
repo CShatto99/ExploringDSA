@@ -44,7 +44,7 @@ const Project51 = () => {
       </div>
 
       <pre className="project-5_1-queue-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(int data) {
 
   list.listInsert(data);
@@ -54,7 +54,7 @@ const Project51 = () => {
       </pre>
 
       <pre className="project-5_1-list-insert">
-        <code>
+        <code className="language-js">
           {`public void listInsert(int value) {
 
   Node newNode = new Node(value);
@@ -80,7 +80,7 @@ const Project51 = () => {
       </pre>
 
       <pre className="project-5_1-queue-remove">
-        <code>
+        <code className="language-js">
           {`public int remove() {
 
   Node temp = list.listRemove();
@@ -91,7 +91,7 @@ const Project51 = () => {
       </pre>
 
       <pre className="project-5_1-list-remove">
-        <code>
+        <code className="language-js">
           {`public Node listRemove() {
 
   Node temp = head;

@@ -40,8 +40,8 @@ app.post('/api/form', async (req, res) => {
       html: htmlEmail
     })
 
-    console.log('Message sent: %s', info.messageId)
-    console.log('Message URL %s', nodemailer.getTestMessageUrl(info))
+    // console.log('Message sent: %s', info.messageId)
+    // console.log('Message URL %s', nodemailer.getTestMessageUrl(info))
 
     res.send('Success')
   } catch(err) {

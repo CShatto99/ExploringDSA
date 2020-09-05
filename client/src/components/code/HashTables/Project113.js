@@ -51,7 +51,7 @@ const Project113 = () => {
       </div>
 
       <pre className="project-11_3-digital-fold">
-        <code>
+        <code className="language-js">
           {`public int digitalFold(int k) {
 
   String key = Integer.toString(k),

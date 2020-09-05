@@ -36,7 +36,7 @@
   grid-area: project-6_5-grid;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .recursion-grid {
     margin: 94px 0 30px 0;
     font-size: 18px;

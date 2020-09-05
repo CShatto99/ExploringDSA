@@ -52,7 +52,7 @@ const Project71 = () => {
       </div>
 
       <pre className="project-7_1-partition">
-        <code>
+        <code className="language-js">
           {`public void partitionIt(int left, int right) {
 
   if(size() <= 3)
@@ -79,7 +79,7 @@ const Project71 = () => {
       </pre>
 
       <pre className="project-7_1-manual-sort">
-        <code>
+        <code className="language-js">
           {`public void manualSort(int left, int right) {
 
   if(size() == 1)
@@ -106,7 +106,7 @@ const Project71 = () => {
       </pre>
 
       <pre className="project-7_1-swap">
-        <code>
+        <code className="language-js">
           {`public void swap(int a, int b) {
 
   int temp = arr[a];

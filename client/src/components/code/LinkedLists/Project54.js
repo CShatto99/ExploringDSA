@@ -46,7 +46,7 @@ const Project54 = () => {
       </div>
 
       <pre className="project-5_4-push">
-        <code>
+        <code className="language-js">
           {`public void push(int data) {
 
   list.insertFirst(data);
@@ -56,7 +56,7 @@ const Project54 = () => {
       </pre>
 
       <pre className="project-5_4-insert-first">
-        <code>
+        <code className="language-js">
           {`public void insertFirst(int data) {
 
   Node newNode = new Node(data);
@@ -75,7 +75,7 @@ const Project54 = () => {
       </pre>
 
       <pre className="project-5_4-pop">
-        <code>
+        <code className="language-js">
           {`public int pop() {
 
   return (list.deleteFirst().data)
@@ -85,7 +85,7 @@ const Project54 = () => {
       </pre>
 
       <pre className="project-5_4-delete-first">
-        <code>
+        <code className="language-js">
           {`public Node deleteFirst() {
 
   Node first = last.next;

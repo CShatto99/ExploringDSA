@@ -14,10 +14,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navbar {
-  background-color: #373737 !important;
+  background-color: #272822 !important;
 }
 
 nav .container {
@@ -30,13 +31,8 @@ img {
 }
 
 pre {
-  background-color: #eee;
-  display: inline-block;
-  width: 100%;
-  overflow-x: scroll;
-  border-radius: 2px;
-  font-size: 15px;
-  padding: 10px;
+  max-width: 100%;
+  overflow-x: scroll !important;
 }
 
 @media screen and (min-width: 768px) {

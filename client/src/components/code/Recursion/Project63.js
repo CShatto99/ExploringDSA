@@ -46,7 +46,7 @@ const Project6_3 = () => {
       </div>
 
       <pre className="project-6_3-power">
-        <code>
+        <code className="language-js">
           {`public static int power(int x, int y) {
 
   if(y == 0)
@@ -66,7 +66,7 @@ const Project6_3 = () => {
       </pre>
 
       <pre className="project-6_3-main">
-        <code>
+        <code className="language-js">
           {`public static void main(String[] args) {
 
   int x = 5, y = 3, result = power(x, y);
@@ -114,7 +114,7 @@ const Project6_3 = () => {
           <b>Output:</b>
         </h4>
         <pre>
-          <code>
+          <code className="language-js">
             {`Current value of y: 5
 Current value of y: 4
 Current value of y: 3

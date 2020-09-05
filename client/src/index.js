@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import './index.css'
+import '../node_modules/prismjs/themes/prism-okaidia.css'
 import App from './App';
 
 

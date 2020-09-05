@@ -56,7 +56,7 @@ const Project115 = () => {
       </div>
 
       <pre className="project-11_5-insert">
-        <code>
+        <code className="language-js">
           {`public void insert(Node newNode) {
 
   int key = newNode.getKey();
@@ -70,7 +70,7 @@ const Project115 = () => {
       </pre>
 
       <pre className="project-11_5-insert_BST">
-        <code>
+        <code className="language-js">
           {`public void insertBST(Node newNode) {
 
   if(root == null)
@@ -116,7 +116,7 @@ const Project115 = () => {
       </pre>
 
       <pre className="project-11_5-find_BST">
-        <code>
+        <code className="language-js">
           {`public Node findBST(int key) {
 
   Node current = root;
@@ -141,7 +141,7 @@ const Project115 = () => {
       </pre>
 
       <pre className="project-11_5-find">
-        <code>
+        <code className="language-js">
           {`public Node find(int key) {
 
   int hashVal = hashFunc(key);

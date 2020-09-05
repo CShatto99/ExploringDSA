@@ -47,7 +47,7 @@ const Project131 = () => {
       </div>
 
       <pre className="project-13_1-minimum-spanning-tree">
-        <code>
+        <code className="language-js">
           {`public void minimumSpanningTree() {
 
   vertexList[0].wasVisited = true;
@@ -80,7 +80,7 @@ const Project131 = () => {
       </pre>
 
       <pre className="project-13_1-get-unvisited-vert">
-        <code>
+        <code className="language-js">
           {`public int getUnvisitedVert(int v) {
 
   for(int i = 0; i < nVerts; i++) {

@@ -39,7 +39,7 @@ const Project43 = () => {
       </div>
 
       <pre className="project-4_3-push_top">
-        <code>
+        <code className="language-js">
 {`public void pushTop(long value) {
 
   if(top == maxSize-1)
@@ -52,7 +52,7 @@ const Project43 = () => {
       </pre>
 
       <pre className="project-4_3-pop_top">
-        <code>
+        <code className="language-js">
 {`public long popTop() {
 
   if(top == -1)
@@ -65,7 +65,7 @@ const Project43 = () => {
       </pre>
 
       <pre className="project-4_3-push_bottom">
-        <code>
+        <code className="language-js">
 {`public void pushBottom(long value) {
 
   if(bottom == maxSize-1)
@@ -78,7 +78,7 @@ const Project43 = () => {
       </pre>
 
       <pre className="project-4_3-pop_bottom">
-        <code>
+        <code className="language-js">
 {`public long popBottom() {
 
   if(bottom == -1)

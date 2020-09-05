@@ -42,7 +42,7 @@ const Project10_1 = () => {
       </div>
 
       <pre className="project-10_1-minimum">
-        <code>
+        <code className="language-js">
           {`public int minimum() {
 
   Node current = root;

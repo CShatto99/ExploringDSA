@@ -51,7 +51,7 @@ const Project6_4 = () => {
       </div>
 
       <pre className="project-6_4-knapsack">
-        <code>
+        <code className="language-js">
           {`public static int knapsack(
   int maxWeight, int[] weights,
   int[] values, int index) {
@@ -77,7 +77,7 @@ const Project6_4 = () => {
       </pre>
 
       <pre className="project-6_4-main">
-        <code>
+        <code className="language-js">
           {`public static void main(String[] args) {
 
   int maxWeight = 50, size = 3;
@@ -142,7 +142,7 @@ const Project6_4 = () => {
           <b>Output:</b>
         </h4>
         <pre>
-          <code>
+          <code className="language-js">
             {`Weight = 10 : Value = 60
 Weight = 20 : Value = 100
 Weight = 30 : Value = 120

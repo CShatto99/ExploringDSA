@@ -41,7 +41,7 @@ const Project74 = () => {
       </div>
 
       <pre className="project-7_4-randon-element">
-        <code>
+        <code className="language-js">
           {`public int randomPartition(int left, int right) {
 
   int range = right - left + 1;
@@ -59,7 +59,7 @@ const Project74 = () => {
       </pre>
 
       <pre className="project-7_4-partiton">
-        <code>
+        <code className="language-js">
           {`public int partition(int left, int right) {
 
   int pivotValue = arr[right];

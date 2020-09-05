@@ -38,7 +38,7 @@ const Project42 = () => {
       </div>
 
       <pre className="project-4_2-insert_rear">
-        <code>
+        <code className="language-js">
 {`public void insertRear(long value) {
 
   if(rear == maxSize-1)
@@ -51,7 +51,7 @@ const Project42 = () => {
       </pre>
 
       <pre className="project-4_2-insert_front">
-        <code>
+        <code className="language-js">
 {`public void insertFront(long value) {
 
   if(front == 0)
@@ -64,7 +64,7 @@ const Project42 = () => {
       </pre>
 
       <pre className="project-4_2-remove_rear">
-        <code>
+        <code className="language-js">
 {`public long removeFront() {
 
   long currentFront = arr[front++];
@@ -79,7 +79,7 @@ const Project42 = () => {
       </pre>
 
       <pre className="project-4_2-remove_front">
-        <code>
+        <code className="language-js">
 {`public long removeRear() {
 
   long currentRear = arr[rear--];

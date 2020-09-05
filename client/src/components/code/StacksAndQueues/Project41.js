@@ -1,4 +1,5 @@
 import React from 'react'
+
 import '../../../css/chpt_4/Project4_1.css'
 import project4_1_img from '../../../img/Chpt_4-Img/Project4_1Img.png'
 
@@ -40,7 +41,7 @@ const Project41 = () => {
       </div>
 
       <pre className="project-4_1-remove">
-        <code>
+        <code className="language-js">
 {`public long remove() {
 
   long temp = queArray[front++];
@@ -53,7 +54,7 @@ const Project41 = () => {
       </pre>
 
       <pre className="project-4_1-display">
-        <code>
+        <code className="language-js">
 {`public void display() {
 
   for(int i = 0; i < maxSize; i++) {
@@ -71,7 +72,7 @@ const Project41 = () => {
       </pre>
 
       <pre className="project-4_1-main">
-        <code>
+        <code className="language-js">
 {`public static void main(String[] args) {
 
   int size = 10;
