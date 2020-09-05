@@ -14,7 +14,7 @@ At the start of summer 2019 I heard about and became interested in topics of dat
 
 ### Accessing the website
 
-If you would like to see the website in its entirety, the domain is [https://exploringdsa.com](http://exploringdsa.com/). If you happen to find mistakes with any of the content, notify me through the contact page.
+If you would like to see the website in its entirety, the domain is [https://exploringdsa.herokuapp.com](http://exploringdsa.herokuapp.com/). If you happen to find mistakes with any of the content, notify me through the contact page.
 
 ### Implementing the Contact Page
 
