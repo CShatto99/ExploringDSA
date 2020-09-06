@@ -48,8 +48,6 @@ Exploring DS&A is a static React website that showcases and teaches projects cen
     
     npm run client (runs frontend server only)
     ```
-    
-## API Endpoints
 
 ## DEMO
 
