@@ -15,6 +15,7 @@ Exploring DS&A is a static React website that showcases and teaches projects cen
 #### Front End
 * React
 * react-router-dom
+* prismjs
 * axios
 * reactstrap
 
